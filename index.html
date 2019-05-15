@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>Fortune Cookie</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../styles.css" rel="stylesheet">
+    <link href="../output.css" rel="stylesheet">
+  </head>
+  <body class="bg-fortune-red">
+    <div class="w-full">
+      <a href="../fortunecookie/index.html" target="_parent"><img class="w-1/5 mt-10 ml-10" src="images/header.png" alt="fortune cookie"></a>
+    </div>
+    <div class="flex justify-center w-full">
+      <img class="h-40" src="images/brokencookie.png" alt="ur future">
+    </div>
+    <div class="flex justify-center w-full">
+      <img class="w-3/5 h-full" src="images/fortunecookie.png" alt="fortune cookie">
+    </div>
+    <div class="flex justify-center w-full text-sm font-semibold mt-10 mb-10">
+      <div class="ml-10 mr-10">Choose one snack, entree, dessert, and drink to reveal your future.</div>
+    </div>
+    <div id="foodmenu">
+      <form name="menuform" id="menumenu">
+        <div class="flex justify-center ml-8 mr-8 text-sm">
+          <div class="w-1/2 pl-10">
+
+            <u>SNACKS</u>
+            <br><br>
+            <input type="radio" name="yourStarters" id="startersID" value="Roti"><strong> Roti Prata</strong>
+            <br>
+            crispy pancake, spicy curry sauce
+            <br><br>
+            <input type="radio" name="yourStarters" id="startersID" value="Kaya"><strong> Kaya Butter Toast</strong>
+            <br>
+            thick cut toast, pandan coconut jam, butter, soft boiled egg
+            <br><br>
+            <input type="radio" name="yourStarters" id="startersID" value="Bao"><strong> Pork Belly Bao</strong>
+            <br>
+            slow cooked pork belly, pickles, hoisin, crunchy garlic, freshly steamed bao
+            <br><br>
+            <u>ENTREES</u>
+            <br><br>
+            <input type="radio" name="yourEntrees" id="entreesID" value="Nasi"><strong> Nasi Lemak</strong>
+            <br>
+            national dish of Malaysia: fragrant coconut rice, fried anchovies, cucumber, peanuts, hard boiled egg
+            <br><br>
+            <input type="radio" name="yourEntrees" id="entreesID" value="Chicken"><strong> Chicken Rice</strong>
+            <br>
+            silky Hainanese poached chicken, seasoned rice, garlic chili sauce
+            <br>
+          </div>
+          <div class="w-1/2 pl-10">
+            <u>DESSERT</u>
+              <br><br>
+              <input type="radio" name="yourDessert" id="dessertsID" value="HK"><strong> HK Hot Cakes</strong>
+              <br>
+              miniature egg cakes, made to order
+              <br><br>
+              <input type="radio" name="yourDessert" id="dessertsID" value="Pocky"><strong> Pocky</strong>
+              <br>
+              Japanese chocolate covered biscuit sticks
+              <br><br>
+              <u>DRINKS</u>
+              <br><br>
+              <input type="radio" name="yourDrinks" id="drinksID" value="Kopi"><strong> Kopi-O</strong>
+              <br>
+              Penang black coffee
+              <br><br>
+              <input type="radio" name="yourDrinks" id="drinksID" value="Milo"><strong> Milo</strong>
+              <br>
+              sweet chocolate malt drink
+              <br><br>
+              <input type="radio" name="yourDrinks" id="drinksID" value="Bubble"><strong> Bubble Tea</strong>
+              <br>
+              Taiwanese black tea, condensed milk, tapioca pearls, honey
+              <br><br>
+              <input type="radio" name="yourDrinks"  id="drinksID"value="Singapore"><strong> Singapore Sling</strong>
+              <br>
+              gin, cherry liqueur, Cointreau, pineapple juice, lime juice, angostura bitters
+            </div>
+          </div>
+        </form>
+      </div>
+      <div id="buttons">
+          <center>
+            <a href="#result"><img class="mt-10" src="images/wholecookie.svg" width="100" id="cookiebutton" onclick="showFortune()"></a>
+            <br><br>
+            <button class="border pl-2 pr-2 pt-1 pb-1 px-4 border-black bg-transparent rounded hover:bg-white text-sm" type="button" onclick="reloadPage()">Reset</button>
+          </center>
+        </div>
+    <center>
+      <div id="result" class="bg-white w-3/4 mt-10">
+      </div>
+    </center>
+  </body>
+  <script src="script.js"></script>
+</html>
